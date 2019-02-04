@@ -40,6 +40,8 @@ const game = () => {
           //Update Images
           playerHand.src = `./assets/${this.textContent}.png`;
           computerHand.src = `./assets/${computerChoice}.png`;
+          // Update Score
+          updateScore();
         }, 2000);
         //Animation
         playerHand.style.animation = "shakePlayer 2s ease";
@@ -63,48 +65,28 @@ const game = () => {
       winner.textContent = "It is a tie";
       return;
     }
-    //Check for Rock
-    if (playerChoice === "rock") {
-      if (computerChoice === "scissors") {
-        winner.textContent = "Player Wins";
-        pScore++;
-        updateScore();
-        return;
-      } else {
-        winner.textContent = "Computer Wins";
-        cScore++;
-        updateScore();
-        return;
-      }
+
+    if (playerChoice === 'rock' && computerChoice === 'scissors') {
+      winner.textContent = 'Player wins!';
+      pScore++;
+      return;
     }
-    //Check for Paper
-    if (playerChoice === "paper") {
-      if (computerChoice === "scissors") {
-        winner.textContent = "Computer Wins";
-        cScore++;
-        updateScore();
-        return;
-      } else {
-        winner.textContent = "Player Wins";
-        pScore++;
-        updateScore();
-        return;
-      }
+
+    if (playerChoice === 'paper' && computerChoice === 'rock') {
+      winner.textContent = 'Player wins!';
+      pScore++;
+      return;
     }
-    //Check for Scissors
-    if (playerChoice === "scissors") {
-      if (computerChoice === "rock") {
-        winner.textContent = "Computer Wins";
-        cScore++;
-        updateScore();
-        return;
-      } else {
-        winner.textContent = "Player Wins";
-        pScore++;
-        updateScore();
-        return;
-      }
+
+    if (playerChoice === 'scissors' && computerChoice === 'paper') {
+      winner.textContent = 'Player wins!';
+      pScore++;
+      return;
     }
+
+    winner.textContent = 'Computer wins!';
+    cScore++;
+    return;
   };
 
   //Is call all the inner function
