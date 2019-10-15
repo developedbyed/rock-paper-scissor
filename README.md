@@ -1,5 +1,23 @@
 # Rock-Paper-Scissor
 
+Simple Rock-Paper-Scissor Game
 
-### How to Use
-download the zip folder or clone the repository then open the index.html and play rock-paper and scissor.
+## Getting Started
+
+Download the zip or clone the repository and start using it
+
+### Prerequisites
+
+just a browzer
+
+### Installing
+
+Not Required
+
+
+
+## Acknowledgments
+
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
