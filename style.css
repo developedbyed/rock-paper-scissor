@@ -26,7 +26,8 @@ section {
   font-size: 25px;
 }
 
-.intro {
+.intro,
+.end {
   color: rgb(224, 224, 224);
   height: 50vh;
   display: flex;
@@ -36,11 +37,13 @@ section {
   transition: opacity 0.5s ease;
 }
 
-.intro h1 {
+.intro h1,
+.end h1 {
   font-size: 50px;
 }
 .intro button,
-.match button {
+.match button,
+.end button {
   width: 150px;
   height: 50px;
   background: none;
@@ -52,7 +55,8 @@ section {
   cursor: pointer;
 }
 
-.match {
+.match,
+.end {
   position: absolute;
   top: 50%;
   left: 50%;
