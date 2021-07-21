@@ -6,7 +6,7 @@
 
 section {
   height: 100vh;
-  background-color: rgb(39, 41, 68);
+  background-color: rgb(223, 134, 61);
   font-family: sans-serif;
 }
 
@@ -48,7 +48,7 @@ section {
   color: rgb(224, 224, 224);
   font-size: 20px;
   background: rgb(45, 117, 96);
-  border-radius: 3px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -145,3 +145,4 @@ div.fadeIn {
     transform: translateY(0px);
   }
 }
+
