@@ -7,6 +7,13 @@ const game = () => {
     const playBtn = document.querySelector(".intro button");
     const introScreen = document.querySelector(".intro");
     const match = document.querySelector(".match");
+    const score = document.querySelector(".score");
+//for the score section to fadeOut and fadeIn with the match
+playButton.addEventListener("click", () => {
+introScreen.classList.add("fadeOut");
+match.classList.add("fadeIn");
+score.classList.add("fadeIn");
+});
 
     playBtn.addEventListener("click", () => {
       introScreen.classList.add("fadeOut");
